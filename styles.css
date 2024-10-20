@@ -1,0 +1,1003 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+li{
+    list-style: none;
+}
+/* ----------------PAGE-1----------------*/
+.page-1{
+  background-color: #ced4da;
+  height: 100vh;
+  position: relative;
+  border-bottom: solid  10px #0096c7;
+
+}
+/* ----------------NAV---------------- */
+nav{
+    display: flex;
+    height: 70px;
+    width: 100%;
+    background-color: transparent;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 998;
+    left: 0;
+    right: 0;
+}
+.links ul{
+    display: flex;
+    gap: 20px;
+}
+.links a{
+    color: #415a77;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    font-family: "Protest Guerrilla", sans-serif;
+    position: relative;
+}
+.links a:hover{
+  text-shadow: 0px 0px 5px #415a77,
+              0px 0px 10px #415a77,
+              0px 0px 15px #415a77;
+}
+.links a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 3px;
+    background-color: #353535;
+    transition: 0.5s;
+}
+.links a:hover::before{
+    content: "";
+    width: 100%;
+}
+.logo{
+    height: 100%;
+    width: 100px;
+    padding: 10px;
+    border-radius: 27%;
+    cursor: pointer;
+}
+.nav-bar , .taskbar{
+  display: none;
+}
+/* ----------------END_NAV---------------- */
+/* ----------------HOME---------------- */
+.home{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 50px;
+    height: calc(100vh - 70px);
+}
+.myimg{
+    width: 400px;
+    height: 400px;
+    border-radius: 27%;
+    border: solid 7px #48cae4;
+    overflow: hidden;
+    position: relative;
+}
+.myimg::before{
+  position: absolute;
+  content: "";
+  width: 400px;
+  height: 400px;
+  background-image: url(./images/logo.png);
+  background-position: center;
+  z-index: 0;
+}
+.myimg img{
+  width: 400px;
+  height: 400px;
+  animation: myimg 7s ease infinite;
+}
+.home h1{
+    font-family: "New Amsterdam", sans-serif;
+    letter-spacing: 10px;
+    font-size: 4rem;
+    color: #100d28;
+    text-shadow: 0px 0px 10px #415a77,
+    0px 0px 15px #415a77,
+    0px 0px 20px #415a77;
+}
+.home p{
+    font-family: "Nerko One", cursive;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+}
+/* ----------------END_HOME---------------- */
+/* ----------------END_PAGE-1---------------- */
+/* ----------------ABOUT---------------- */
+.about{
+  width: 100%;
+  background: linear-gradient(45deg ,#ced4dad6 , #4f5bd5 50%, #ced4dad6 100%);
+  border-bottom: solid  10px #0096c7;
+  padding-bottom: 50px;
+}
+.about .header {
+    width: 100%;
+    height: auto;
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    position: relative;
+}
+.about .header h1{
+  -webkit-text-stroke: 2px #000;
+  color: transparent;
+  font-size: 12rem;
+}
+.about .header h1::before{
+  content: "about me";
+  font-size: 3rem;
+  position: absolute;
+  top: 70px;
+  left: 42%;
+  color: #415a77;
+  font-family: "Rubik Wet Paint", system-ui;
+}
+.top-about{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.top-about .img{
+  position: relative;
+}
+.top-about .img::after{
+position: absolute;
+content: "my logo";
+top: 20px;
+left: 20px;
+right: 20px;
+bottom: 20px;
+border-radius: 20px;
+background-color: rgba(0, 0, 0, 0.5);
+text-align: center;
+color: #fefefe;
+font-size: 4rem;
+font-family: "Oswald", sans-serif;
+text-transform: uppercase;
+font-weight: 900;
+padding-top: 35%;
+z-index: -200;
+transition: 0.5s;
+}
+.top-about .img:hover::after{
+  z-index: 2;
+}
+.width{
+  width: 450px;
+  height: 450px;
+  box-shadow:  4px 5px rgba(0, 0, 0, 0.5);
+  margin: 20px;
+  border-radius: 20px;
+}
+.right-about{
+  background-color: #2c365e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.right-about p{
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  font-family: "Oswald", sans-serif;
+  font-weight: 800;
+  margin-left: 50px;
+  color: #100d28;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.email{
+  text-transform: lowercase;
+}
+.colore{
+  color: #000;
+}
+.social-media{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.social-media button{
+  width: 130px;
+  height: 50px;
+  border-radius: 40px;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  border: none;
+  background: linear-gradient(50deg, #000000, #333333 50%, #000000 100%);
+  box-shadow:  5px 5px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+.social-media button:hover{
+  box-shadow: 3px 5px rgba(0, 0, 0, 0.3);
+}
+.social-media button:active{
+  transform: scale(0.95); 
+  box-shadow:none;
+}
+.whatsapp{
+  color: #25D366;
+  cursor: pointer;
+}
+.facebook{
+  color: #1877F2;
+  cursor: pointer;
+}
+.insta {
+  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+  -webkit-background-clip: text;
+  background-clip:text;
+  -webkit-text-fill-color: transparent;
+  z-index: 100;
+  cursor: pointer;
+}
+.about .bottom-about{
+  width: 82%;
+  margin: 0 auto ;
+  background-color: #2c365e;
+  box-shadow:  4px 5px 4px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  min-height: 200px;
+}
+.about .bottom-about p{
+  font-size: 1.28rem;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  line-height: 35px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  padding: 30px;
+  color: #100d28;
+}
+/* ----------------END_ABOUT---------------- */
+/* ----------------SKILLS---------------- */
+.skills-page{
+  background: linear-gradient(45deg ,#ced4dad6 , #4f5bd5);
+  border-bottom: solid  10px #0096c7;
+  width: 100%;
+  position: relative;
+  padding-bottom: 50px;
+}
+.skills-page header h1{
+  -webkit-text-stroke: 2px #000;
+  color: transparent;
+  font-size: 15rem;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+}
+.skills-page header h1::before{
+  content: "my skills";
+  font-size: 5rem;
+  position: absolute;
+  top: 80px;
+  left: 38%;
+  color: #415a77;
+  font-family: "Rubik Wet Paint", system-ui;
+}
+.skills{
+  width: 1000px;
+  background-color: #2c365e;
+  margin: auto;
+  height: 400px;
+  padding: 50px;
+  box-shadow:  4px 5px 4px 5px rgba(0, 0, 0, 0.5);
+}
+.skills .text{
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 20px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 900;
+}
+.skills .div{
+  width: 90%;
+  background-color: #ced4dad6;
+  height: 20px;
+  border-radius: 40px;
+  position: relative;
+}
+.html{
+  background-color: #7f5539;
+  width: 95%;
+  height: 100%;
+  z-index: 100;
+  border-radius: 40px;
+}
+.html::after{
+  content: "95%";
+  position: absolute;
+  right: -60px;
+  top: -4px;
+  font-size: 1.3rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  color: #0096c7;
+  height: 27px;
+  width: 45px;
+  padding: 2px;
+}
+.css{
+  background-color: #f4a261;
+  width: 80%;
+  height: 100%;
+  z-index: 100;
+  border-radius: 40px;
+}
+.css::after{
+  content: "80%";
+  position: absolute;
+  right: -60px;
+  top: -4px;
+  font-size: 1.3rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  color: #0096c7;
+  height: 27px;
+  width: 45px;
+  padding: 2px;
+}
+.js{
+  background-color: #99582a;
+  width: 65%;
+  height: 100%;
+  z-index: 100;
+  border-radius: 40px;
+}
+.js::after{
+  content: "65%";
+  position: absolute;
+  right: -60px;
+  top: -4px;
+  font-size: 1.3rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  color: #0096c7;
+  height: 27px;
+  width: 45px;
+  padding: 2px;
+}
+.en{
+  background-color: #432818;
+  width: 50%;
+  height: 100%;
+  z-index: 100;
+  border-radius: 40px;
+}
+.en::after{
+  content: "50%";
+  position: absolute;
+  right: -60px;
+  top: -4px;
+  font-size: 1.3rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  color: #0096c7;
+  height: 27px;
+  width: 45px;
+  padding: 2px;
+}
+/* ----------------END_SKILLS---------------- */
+/* ----------------SERVICES---------------- */
+.services{
+  background: linear-gradient(45deg ,#ced4dad6 , #4f5bd5);
+  border-bottom: solid  10px #0096c7;
+  width: 100%;
+}
+.header-services h1{
+  -webkit-text-stroke: 2px #000;
+  color: transparent;
+  font-size: 12rem;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+}
+.header-services{
+  position: relative;
+  width: 100%;
+  height: auto;
+  text-transform: capitalize;
+}
+.header-services h1::after{
+  content: "my services";
+  font-size: 4rem;
+  position: absolute;
+  top: 77px;
+  left: 35%;
+  color: #415a77;
+  font-family: "Rubik Wet Paint", system-ui;
+}
+.body-services{
+  display: grid;
+  grid-template-columns: repeat(3 , minmax(300px , 1fr));
+  gap: 60px;
+  padding: 60px;
+}
+.service{
+  background-color: #2c365e;
+  width: 350px;
+  height: auto;
+  border-radius: 50px;
+  box-shadow:  4px 5px 4px 5px rgba(0, 0, 0, 0.5)
+}
+.head-service{
+  text-align: center;
+  padding: 15px;
+}
+.head-service i{
+  color: #4bd2ff;
+  font-size: 4rem;
+  align-items: center;
+  font-weight: bolder;
+}
+.head-service h4{
+  font-size: 2rem;
+  color: #fefae0;
+  text-transform: capitalize;
+}
+.service p{
+  font-size: 1.2rem;
+  line-height: 25px;
+  padding: 15px;
+  font-family: "Oswald", sans-serif;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+/* ----------------END_SEVICES---------------- */
+/* ----------------PORTFOLIO---------------- */
+.portfolio{
+  background: linear-gradient(45deg ,#ced4dad6 , #4f5bd5);
+  border-bottom: solid  10px #0096c7;
+  position: relative;
+}
+.portfolio h1{
+  -webkit-text-stroke: 2px #000;
+  color: transparent;
+  font-size: 12rem;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+}
+.portfolio h1::after{
+  content: "my projects";
+  font-size: 4rem;
+  position: absolute;
+  top: 77px;
+  left: 35%;
+  color: #415a77;
+  font-family: "Rubik Wet Paint", system-ui;
+}
+.body-portfolio{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+.web img{
+  width: 600px;
+  height: 300px;
+  border: solid 5px #dad7cd;
+  box-shadow: 4px 5px 6px 7px rgba(0, 0, 0, 0.5);
+}
+.web{
+  position: relative;
+}
+.web2{
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  transition: 0.2s;
+}
+.web2 button{
+  width: 200px;
+  height: 60px;
+  border-radius: 25px;
+  border: none;
+  background: linear-gradient(50deg, #000000, #333333 50%, #000000 100%);
+  box-shadow: 4px 5px 4px 5px rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: 900;
+  color: #100d28;
+  cursor: pointer;
+}
+.web2 button:active{
+  scale: 1.2;
+}
+.web:hover .web2{
+  visibility: visible;
+}
+
+/* ----------------END_PORTFOLIO---------------- */
+/* ----------------CONTACT---------------- */
+.contact{
+  background: linear-gradient(45deg ,#ced4da , #4f5bd5);
+  border-bottom: solid  10px #0096c7;
+}
+.header-contact h1{
+  -webkit-text-stroke: 2px #000;
+  color: transparent;
+  font-size: 11rem;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+}
+.header-contact{
+  position: relative;
+  width: 100%;
+  height: auto;
+  text-transform: capitalize;
+}
+.header-contact h1::before{
+  content: "Message me";
+  font-size: 3.59rem;
+  position: absolute;
+  top: 77px;
+  left: 38%;
+  color: #415a77;
+  font-family: "Rubik Wet Paint", system-ui;
+}
+.body-contact{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div-contact{
+  background-color: #2c365e;
+  width: 57%;
+  align-items: center;
+  padding: 50px;
+  opacity: 0.9;
+  border-radius: 50px;
+  margin: 50px;
+  box-shadow: 10px 9px rgba(0, 0, 0, 0.5);
+}
+.div-contact h1{
+  text-transform: capitalize;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
+}
+.inputs{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 100%;
+}
+.inputs .text{
+  width: 80%;
+  color: #707070;
+  height: 50px;
+  padding-left: 40px;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  background: #f6f6f6;
+  border: 1px solid #eee;
+  line-height: 28px;
+}
+.div-input{
+  position: relative;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.div-input i{
+  color: #707070;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 14px;
+  left: 10px;
+}
+textarea{
+  min-width: 80%;
+  max-width: 80%;
+  min-height: 100px;
+  margin-left: 50px;
+  padding: 10px;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  background: #f6f6f6;
+  border: 1px solid #eee;
+  color: #707070;
+}
+.submit{
+  width: 25%;
+  height: 50px;
+  background: linear-gradient(50deg, #000000, #333333 50%, #000000 100%);
+  border-radius: 25px;
+  font-size: 2rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  color: #0096c7;
+  margin: 0 auto;
+  box-shadow: 4px 5px 4px 5px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+.submit:active{
+  box-shadow: 2px 3px 2px 3px rgba(0, 0, 0, 0.3);
+}
+/* ----------------END_CONTACT---------------- */
+/* ----------------BTN_BACK---------------- */
+.btn-back {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  z-index: 999;
+  animation: btn-back 1s ease-in infinite;
+}
+
+.btn {
+  background-color: #415a77;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background-color: #1b3a4b;
+}
+/* ----------------END_BTN_BACK---------------- */
+/* ----------------FOOTER---------------- */
+footer{
+  background-color: #4f5bd5;
+  text-align: center;
+
+}
+.head-footer{
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+.head-footer h1{
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Oswald", sans-serif;
+  color: #100d28;
+  font-weight: 600;
+}
+.head-footer h1::after{
+  position: absolute;
+  content: "";
+  top: 60px;
+  left: 45%;
+  height: 3px;
+  width: 10%;
+  background-color: #1b3a4b;
+}
+/* ----------------ICONS---------------- */
+.icons{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+/* ----------------ICON_INSTAGRAM---------------- */
+.icon-i{
+  width: 5rem;
+  height: 5rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.icon-i::before{
+  position: absolute;
+  content: "";
+  width: 130%;
+  height: 130%;
+  left: -110%;
+  top: 80%;
+  transform: rotate(45deg);
+  background: linear-gradient(-45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+}
+.icon-i:hover::before{
+  animation: slide 0.7s forwards;
+}
+.icon-i:hover > i{
+  scale: 1.2;
+  color: #f1f1f1;
+}
+.icon-i i{
+  font-size: 2rem;
+  color: #2c365e;
+}
+/* ----------------ICON_FACEBOOK---------------- */
+.icon-f{
+  width: 5rem;
+  height: 5rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.icon-f::before{
+  position: absolute;
+  content: "";
+  width: 130%;
+  height: 130%;
+  left: -110%;
+  top: 80%;
+  transform: rotate(45deg);
+  background-color: #1877F2;
+}
+.icon-f:hover::before{
+  animation: slide 0.7s forwards;
+}
+.icon-f:hover > i{
+  scale: 1.2;
+  color: #f1f1f1;
+}
+.icon-f i{
+  font-size: 2rem;
+  color: #2c365e;
+}
+/* ----------------ICON_WHATSAPP---------------- */
+.icon-w{
+  width: 5rem;
+  height: 5rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.icon-w::before{
+  position: absolute;
+  content: "";
+  width: 130%;
+  height: 130%;
+  left: -110%;
+  top: 80%;
+  transform: rotate(45deg);
+  background-color: #25D366;
+}
+.icon-w:hover::before{
+  animation: slide 0.7s forwards;
+}
+.icon-w:hover > i{
+  scale: 1.2;
+  color: #f1f1f1;
+}
+.icon-w i{
+  font-size: 2rem;
+  color: #2c365e;
+}
+/* ----------------ICON_LINKEDIN---------------- */
+.icon-l{
+  width: 5rem;
+  height: 5rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.icon-l::before{
+  position: absolute;
+  content: "";
+  width: 130%;
+  height: 130%;
+  left: -110%;
+  top: 80%;
+  transform: rotate(45deg);
+  background-color:  #0A66C2;
+}
+.icon-l:hover::before{
+  animation: slide 0.7s forwards;
+}
+.icon-l:hover > i{
+  scale: 1.2;
+  color: #f1f1f1;
+}
+.icon-l i{
+  font-size: 2rem;
+  color: #2c365e;
+}
+/* ----------------ICON_YOUTUBE---------------- */
+.icon-y{
+  width: 5rem;
+  height: 5rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.icon-y::before{
+  position: absolute;
+  content: "";
+  width: 130%;
+  height: 130%;
+  left: -110%;
+  top: 80%;
+  transform: rotate(45deg);
+  background-color: #FF0000;
+}
+.icon-y:hover::before{
+  animation: slide 0.7s forwards;
+}
+.icon-y:hover > i{
+  scale: 1.2;
+  color: #f1f1f1;
+}
+.icon-y i{
+  font-size: 2rem;
+  color: #2c365e;
+}
+/* ----------------ICON_TEITTER---------------- */
+.icon-t{
+  width: 5rem;
+  height: 5rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.icon-t::before{
+  position: absolute;
+  content: "";
+  width: 130%;
+  height: 130%;
+  left: -110%;
+  top: 80%;
+  transform: rotate(45deg);
+  background-color: #1DA1F2;
+}
+.icon-t:hover::before{
+  animation: slide 0.7s forwards;
+}
+.icon-t:hover > i{
+  scale: 1.2;
+  color: #f1f1f1;
+}
+.icon-t i{
+  font-size: 2rem;
+  color: #2c365e;
+}
+.bot-footer{
+  padding: 50px;
+  text-transform: capitalize;
+  color: #1b3a4b;
+}
+.bot-footer span{
+  cursor: pointer;
+  color: white;
+}
+.bot-footer span:hover{
+  animation: name 5s infinite ease-in;
+}
+/* ----------------END_FOOTER---------------- */
+/* ----------------LOADER---------------- */
+.loader{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+.hide-loader{
+  z-index: -999;
+  visibility: hidden;
+}
+.loader img{
+  width: 100%;
+  height: 100%;
+  background-position: center;
+}
+/* ----------------END_LOADER---------------- */
+/* ----------------ANMITION---------------- */
+@keyframes myimg{
+  25%{
+    opacity: 0.2;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  75%{
+    opacity: 0.7;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes btn-back{
+  0%{
+    top: 602px;
+  }
+  25%{
+    top: 600px;
+  }
+  50%{
+    top: 598px;
+  }
+  100%{
+    top: 600px;
+  }
+}
+@keyframes slide{
+  50%{
+    left: 10%;
+    top: -40%;
+  }
+  100%{
+    left: -15%;
+    top: -15%;
+  }
+}
+@keyframes name{
+  0%{
+    color: #0096c7;
+    scale: 0.5;
+  }
+  25%{
+    color: #100d28;
+    scale: 1;
+  }
+  50%{
+    color: #1877F2;
+    scale: 1.2;
+  }
+  75%{
+    color: #48cae4;
+    scale: 0.5;
+  }
+  100%{
+    color: #4bd2ff;
+    scale: 0;
+  }
+}
+/* ----------------END_ANMITION---------------- */

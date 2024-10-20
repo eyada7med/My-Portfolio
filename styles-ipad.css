@@ -1,0 +1,130 @@
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .home{
+    margin: 30px;
+    margin-top: 100px;
+  }
+  .links{
+    display: none;
+  }
+  nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .nav-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #100d28;
+    font-family: "New Amsterdam", sans-serif;
+    cursor: pointer;
+  }
+  .taskbar{
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 200px;
+    box-shadow: 0 0 1.5rem 0 rgb(0 0 0 / 20%);
+    z-index: 999;
+    height: 450px;
+    background: linear-gradient(45deg ,#ced4dad6 , #4f5bd5);
+    padding: 5px;
+  }
+  .show-taskbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+  .taskbar ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-transform: uppercase;
+    padding-left: 10px;
+    margin-top: 15px;
+    font-size: 1.3rem;
+    font-family: "Protest Guerrilla", sans-serif;
+  }
+  .taskbar .bi{
+    background-color: #FF0000;
+    font-size: 2rem;
+    border-radius: 50%;
+    color: #f1f1f1;
+    cursor: pointer;
+  }
+
+  .taskbar .bi:hover{
+    scale: 1.2;
+    color: #FF0000;
+    background-color: transparent;
+  }
+  .nav-bar i{
+    font-size: 2rem;
+    font-weight: 900;
+  }
+  .nav-bar h1{
+    letter-spacing: 2px;
+  }
+  .home .text h1{
+    width: 200px;
+  }
+  .myimg{
+    width: 300px;
+    height: 300px;
+    background-position: center;
+  }
+  .myimg img{
+    width: 300px;
+    height: 300px;
+  }
+  .myimg::before{
+    width: 300px;
+    height: 300px;
+  }
+  .portfolio h1{
+    font-size: 10rem;
+  }
+  .portfolio h1::after{
+    content: "my projects";
+    font-size: 4rem;
+    position: absolute;
+    top: 60px;
+    left: 28%;
+    color: #415a77;
+    font-family: "Rubik Wet Paint", system-ui;
+  }
+  .header-contact h1::before{
+    content: "Message me";
+    font-size: 3.59rem;
+    position: absolute;
+    top: 77px;
+    left: 30%;
+    color: #415a77;
+    font-family: "Rubik Wet Paint", system-ui;
+  }
+  .top-about{
+    display: flex;
+    flex-direction: column;
+  }
+  .skills{
+    width: 80%;
+  }
+
+  .header-services h1{
+    font-size: 10rem;
+  }
+  .header-services h1::after{
+    left: 20%;
+    top: 60px;
+  }
+  .body-services{
+    grid-template-columns: 1fr;
+  }
+  .service{
+    margin: auto;
+    width: 500px;
+  }
+  .web2{
+    display: none;
+  }
+}

@@ -1,0 +1,173 @@
+@media screen and (max-width: 768px){
+
+  .links{
+    display: none;
+  }
+  nav{
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-bar{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    color: #100d28;
+    font-family: "New Amsterdam", sans-serif;
+    cursor: pointer;
+    padding-right: 10px;
+  }
+  .taskbar{
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 200px;
+    box-shadow: 0 0 1.5rem 0 rgb(0 0 0 / 20%);
+    z-index: 999;
+    height: 450px;
+    background: linear-gradient(45deg ,#ced4dad6 , #4f5bd5);
+    padding: 5px;
+  }
+  .show-taskbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+  .taskbar ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-transform: uppercase;
+    padding-left: 10px;
+    margin-top: 15px;
+    font-size: 1.3rem;
+    font-family: "Protest Guerrilla", sans-serif;
+  }
+  .taskbar .bi{
+    background-color: #FF0000;
+    font-size: 2rem;
+    border-radius: 50%;
+    color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  .taskbar .bi:hover{
+    scale: 1.2;
+    color: #FF0000;
+    background-color: transparent;
+  }
+  .nav-bar i{
+    font-size: 2rem;
+    font-weight: 900;
+  }
+  .home{
+    flex-direction: column;
+  }
+  .myimg{
+    width: 300px;
+    height: 300px;
+    background-position: center;
+  }
+  .myimg img{
+    width: 300px;
+    height: 300px;
+  }
+  .myimg::before{
+    width: 300px;
+    height: 300px;
+  }
+  .about .header h1{
+    font-size: 5rem;
+    font-family: "Rubik Wet Paint", system-ui;
+  }
+  .about .header h1::before{
+    display: none;
+  }
+  .top-about{
+    display: flex;
+    flex-direction: column;
+  }
+  .width{
+    width: 350px;
+    height: 450px;
+  }
+  .social-media button{
+    width: 100px;
+  }
+  .about .bottom-about p{
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 20px;
+  }
+  .skills-page header h1::before{
+    display: none;
+  }
+  .skills-page header h1{
+    font-size: 6rem;
+    font-family: "Rubik Wet Paint", system-ui;
+  }
+  .header-services h1::after{
+    display: none;
+  }
+  .header-services h1{
+    font-size: 4.5rem;
+    font-family: "Rubik Wet Paint", system-ui;
+  }
+  .body-services{
+    grid-template-columns: 1fr;
+    padding-left: 30px;
+  }
+  .service{
+    width: 80%;
+    margin-left: 50px;
+  }
+  .portfolio h1::after{
+    display: none;
+  }
+  .portfolio h1{
+    font-size: 4.5rem;
+    font-family: "Rubik Wet Paint", system-ui;
+  }
+  .web img{
+    width: 80%;
+    height: 80%;
+    margin-left: 50px;
+  }
+  .skills{
+    width: 80%;
+  }
+  .web2{
+    display: none;
+  }
+  .header-contact h1::before{
+    display: none;
+  }
+  .header-contact h1{
+    font-size: 5rem;
+    font-family: "Rubik Wet Paint", system-ui;
+  }
+  .div-contact h1{
+    font-size: 1.5rem;
+  }
+  .div-contact{
+    width: 80%;
+    padding: 20px;
+  }
+  .inputs i{
+    display: none;
+  }
+.submit{
+  width: 50%;
+}
+textarea{
+  margin-left: 25px;
+}
+.inputs .text{
+  width: 95%;
+  padding-left: 25px;
+}
+  .icons{
+    display: grid;
+    grid-template-columns: repeat(3 , minmax(5.5rem , 1fr));
+  }
+  }
